@@ -12,11 +12,12 @@ export class MonthViewComponent {
   constructor(private service:PictureDataService){}
 
   pictures?: Picture[];
-  startDate?: string;
-  endDate?: string;
+  startDate?: string = "2023-10-01";
+  endDate?: string = "2023-10-05";
 
   ngOnInit(){
     // this.service.getPictures().subscribe(response => this.pictures = response);
+    this.getByDate();
   }
 
   getByDate(){
