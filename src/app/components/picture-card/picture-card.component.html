@@ -1,0 +1,11 @@
+<div class="card" *ngIf="picture" style="background-image: url({{picture.url}});">
+    <a routerLink="/detail/{{picture.date}}">
+
+        <h2>{{picture.date}}</h2>
+        <div>
+    
+            <p>{{picture.title}}</p>
+            <p> &copy; {{picture.copyright}}</p>
+        </div>
+    </a>
+</div>

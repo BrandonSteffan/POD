@@ -1,0 +1,8 @@
+<label for="start">Select Start Date</label>
+<input [(ngModel)]="this.startDate" (ngModelChange)="getByDate()" type="date"  id="start" >
+<label for="end">Select End Date</label>
+<input [(ngModel)]="this.endDate" (ngModelChange)="getByDate()" type="date"  id="end">
+<!-- <button (click)="getByDate()">Confirm</button> -->
+<div class="card-holder">
+    <app-picture-card *ngFor="let picture of pictures" [picture]="picture"></app-picture-card>
+</div>

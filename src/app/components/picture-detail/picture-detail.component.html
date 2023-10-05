@@ -1,0 +1,16 @@
+<div class="details" *ngIf="picture">
+    <h2>{{picture.title}}</h2>
+    <div class="flex">
+        <div class="flex-l">
+            <!-- <iframe src="getSafeYoutubeUrl({{picture.url}})" *ngIf="picture.media_type == 'video'" frameborder="0" ></iframe> -->
+            <img src="{{picture.url}}" alt="" *ngIf="picture.media_type== 'image'"> <br>
+            <a href="{{picture.hdurl}}">Picture in HD</a>
+            <p>&copy; {{picture.copyright}}</p>
+        </div>
+        <div class="flex-r">
+            
+            <p>{{picture.explanation}}</p>
+        </div>
+
+    </div>
+</div>
