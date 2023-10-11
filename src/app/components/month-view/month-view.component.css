@@ -6,3 +6,12 @@
     gap: 20px;
     margin-bottom: 50px;
 }
+
+.selectDate{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
