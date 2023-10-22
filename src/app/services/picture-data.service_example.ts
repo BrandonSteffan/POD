@@ -12,18 +12,21 @@ export class PictureDataService {
 
   getPictureByDay(date:string):Observable<Picture>{
     const picUrl = "https://api.nasa.gov/planetary/apod";
-    const apiKey = "api_key=rXXV4rb59A2CTgI46wwmc5PbVqFQM44DMlWrKRK7"
+    // Insert your api key here 
+    const apiKey = ""
 
     const url = picUrl +"?"+ "date="+date  +"&"+apiKey;
 
     return this.client.get<Picture>(url);
   }
 
+
   getPicturesByStart(startDate:string, endDate:string):Observable<Picture[]>{
     const picUrl = "https://api.nasa.gov/planetary/apod?";
     const datebaseS = "start_date=";
     const datebaseE = "end_date="
-    const apiKey = "api_key=rXXV4rb59A2CTgI46wwmc5PbVqFQM44DMlWrKRK7"
+    // Insert your api key here
+    const apiKey = ""
     const url= picUrl + datebaseS + startDate+"&"+datebaseE+endDate + "&"+apiKey;
     return this.client.get<Picture[]>(url);
   }

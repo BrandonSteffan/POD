@@ -1,5 +1,8 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+
+/src/app/services/picture-data.service.ts
+/src/app/services-data.service.spec.ts
 # Compiled output
 /dist
 /tmp
